@@ -99,6 +99,10 @@ double getTimeDelta(SystemTime start)
 
 #include <unistd.h>
 
+#ifndef CLOCK_MONOTONIC_RAW
+#define CLOCK_MONOTONIC_RAW CLOCK_MONOTONIC
+#endif
+
 namespace moodycamel
 {
 
